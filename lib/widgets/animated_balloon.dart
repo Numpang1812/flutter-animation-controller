@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
 class AnimatedBalloonWidget extends StatefulWidget {
   @override
@@ -32,11 +33,13 @@ class _AnimatedBalloonWidgetState extends State<AnimatedBalloonWidget> with Tick
     double _balloonBottomLocation = MediaQuery.of(context).size.height - _balloonHeight;
 
     _animationFloatUp = Tween(begin: _balloonBottomLocation, end: 0.0).animate(
-        CurvedAnimation(parent: _controllerFloatUp, curve: Curves.fastOutSlowIn)
+      // Changed curves to Curves.easeInOut
+        CurvedAnimation(parent: _controllerFloatUp, curve: Curves.easeInOut)
     );
 
     _animationGrowSize = Tween(begin: 50.0, end: _balloonWidth).animate(
-        CurvedAnimation(parent: _controllerGrowSize, curve: Curves.elasticInOut)
+      // Changed curves to Curves.elasticOut
+        CurvedAnimation(parent: _controllerGrowSize, curve: Curves.elasticOut)
     );
 
     _controllerFloatUp.forward();
@@ -46,11 +49,39 @@ class _AnimatedBalloonWidgetState extends State<AnimatedBalloonWidget> with Tick
       animation: _animationFloatUp,
       builder: (context, child) {
         return Container(
-          child: child,
           margin: EdgeInsets.only(
             top: _animationFloatUp.value,
           ),
           width: _animationGrowSize.value,
+          height: _balloonHeight + 120.0,
+          child: Stack(
+            clipBehavior: Clip.none,
+            alignment: Alignment.center,
+            children: [
+              // TODO: Add Shadows
+            Positioned(
+              bottom: -200.0,
+              child: IgnorePointer(
+                child: Transform.scale(
+                  scaleY: 0.2, // smaller = flatter shadow
+                  scaleX: 0.7,
+                  child: ImageFiltered(
+                    imageFilter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+                    child: Container(
+                      width: _animationGrowSize.value * 1.2,
+                      height: _animationGrowSize.value * 1.2, // keep this a circle base
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.black.withValues(alpha: 0.22),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+              child!,
+            ],
+          )
         );
       },
       child: GestureDetector(
