@@ -18,25 +18,25 @@ The **Balloon Animation** project is an interactive Flutter application designed
 
 ## 2. Screenshots of Outputs
 
-** Main Menu (Background / Cloud / Balloon Texture) **
+**Main Menu (Background / Cloud / Balloon Texture)**
 
-<img width="540" height="1200" alt="image" src="https://github.com/user-attachments/assets/79a526fc-3ee3-414c-b3e6-f66a87e374b2" />
+![Main Menu](assets/screenshots/main_menu.png)
 
-** Balloon Drifts As It Floats **
+**Balloon Drifts As It Floats**
 
-<img width="540" height="1200" alt="image" src="https://github.com/user-attachments/assets/a7e52c77-7a13-4e17-9aa6-243da5b76bc8" />
+![Balloon Drifting](assets/screenshots/balloon_drifts.png)
 
-** Balloon Able to Move Around ** 
+**Balloon Able to Move Around** 
 
-<img width="540" height="1200" alt="image" src="https://github.com/user-attachments/assets/ed334266-eb90-40c4-b08e-3070aad70ff2" />
+![Balloon Dragging](assets/screenshots/balloon_dragged.png)
 
-** Multiple Balloons **
+**Multiple Balloons**
 
-<img width="540" height="1200" alt="image" src="https://github.com/user-attachments/assets/0655cfea-e57d-4801-9ba3-995b7866d336" />
+![Multiple Balloons](assets/screenshots/multiple_balloons.png)
 
-** Multiple Balloons Able to Move Around / Shrink / Grow **
+**Multiple Balloons Able to Move Around / Shrink / Grow**
 
-<img width="540" height="1200" alt="image" src="https://github.com/user-attachments/assets/a949003b-2de5-4a11-b1a1-91261d5b94c5" />
+![Pulse Interaction](assets/screenshots/balloons_pulse.png)
 
 
 
