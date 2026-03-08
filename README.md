@@ -454,6 +454,6 @@ class _BackgroundElementsState extends State<BackgroundElements>
 
 ## 4. GitHub Link
 
-[GitHub - Numpang1812/flutter-animation-controller](https://github.com/Numpang1812/flutter-animation-controller)
+https://github.com/Numpang1812/flutter-animation-controller
 
 ---
