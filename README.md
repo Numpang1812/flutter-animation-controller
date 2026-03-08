@@ -1,21 +1,43 @@
-# Flutter Balloon Animation - Final Project Report
-
 ## 1. Description of the Project
 
 The **Balloon Animation** project is an interactive Flutter application designed to showcase advanced animation techniques using `AnimationController`, `Tween`, and `CurvedAnimation`. The project features a dynamic scene where users interact with balloons that naturally float up, sway with the wind, and respond to touch and movement.
 
-### Key Features:
-- **Natural Motion**: Each balloon uses refined easing curves (`Curves.easeInOutSine`) to simulate realistic floating and horizontal swaying.
-- **Dynamic Shadows**: A responsive shadow system that changes size and blur as the balloon floats further from the "ground" level.
-- **Interactive Elements**: Users can tap to inflate/deflate the balloons and drag them manually around the screen.
-- **Atmospheric Background**: Animating background elements (moving clouds) and sound effects (background wind and inflation sounds) provide an immersive experience.
-- **Sequential Gameplay**: After the primary balloon reaches the top and is popped by the user, a sequence of four additional balloons with varied properties automatically spawns.
+### All core requirements were successfully implemented:
+1.  **Easing and Curve improvement**: Implemented using `easeInOut` and `easeInOutSine`.
+2.  **Balloon Shadow**: A blurred shadow reacts to the balloon's height and inflation level. Not 100% Perfect.
+3.  **Rotation Animation**: A swaying rotation shows the drifting effect.
+4.  **Pulse Animation**: Used growth and shrink functions during inflation and deflation animations.
+5.  **Background Animation**: Animating clouds move across the screen.
+6.  **Balloon Texture**: Enhanced 3D appearance with gradients and reflections.
+7.  **Interaction**: User can tap to inflate/deflate and drag to reposition balloons. Works after the Sequential Animation.
+8.  **Sound Effects**: Integration of `audioplayers` for inflation sounds and background sound.
+9.  **Sequential Animations**: The primary balloon pops and triggers a subsequent spawn event where multiple balloons spawn.
+10. **Multiple Balloons**: A dynamic scene with multiple varied balloons is created after the first popped event.
 
 ---
 
 ## 2. Screenshots of Outputs
 
-<img width="1080" height="2400" alt="image" src="https://github.com/user-attachments/assets/79a526fc-3ee3-414c-b3e6-f66a87e374b2" />
+** Main Menu (Background / Cloud / Balloon Texture) **
+
+<img width="540" height="1200" alt="image" src="https://github.com/user-attachments/assets/79a526fc-3ee3-414c-b3e6-f66a87e374b2" />
+
+** Balloon Drifts As It Floats **
+
+<img width="540" height="1200" alt="image" src="https://github.com/user-attachments/assets/a7e52c77-7a13-4e17-9aa6-243da5b76bc8" />
+
+** Balloon Able to Move Around ** 
+
+<img width="540" height="1200" alt="image" src="https://github.com/user-attachments/assets/ed334266-eb90-40c4-b08e-3070aad70ff2" />
+
+** Multiple Balloons **
+
+<img width="540" height="1200" alt="image" src="https://github.com/user-attachments/assets/0655cfea-e57d-4801-9ba3-995b7866d336" />
+
+** Multiple Balloons Able to Move Around / Shrink / Grow **
+
+<img width="540" height="1200" alt="image" src="https://github.com/user-attachments/assets/a949003b-2de5-4a11-b1a1-91261d5b94c5" />
+
 
 
 ---
@@ -432,27 +454,6 @@ class _BackgroundElementsState extends State<BackgroundElements>
 
 ## 4. GitHub Link
 
-The project is hosted at:  
 [GitHub - Numpang1812/flutter-animation-controller](https://github.com/Numpang1812/flutter-animation-controller)
 
 ---
-
-## 5. Evaluation
-
-**Did this project fulfill all the requirements?**  
-**Yes.**
-
-### Explanation:
-All core requirements were successfully implemented:
-1.  **Easing and Curve improvement**: Implemented using `easeInOut` and `easeInOutSine` for smooth, realistic motion.
-2.  **Balloon Shadow**: A dynamic, blurred shadow reacts to the balloon's height and inflation level.
-3.  **Rotation Animation**: A swaying rotation simulates the drifting effect of a real balloon.
-4.  **Pulse Animation**: Subtle "inflation" growth gives life to the balloon upon interaction.
-5.  **Background Animation**: Animating clouds move across the screen to add depth.
-6.  **Balloon Texture**: Enhanced 3D appearance with gradients and specular highlights.
-7.  **Interaction**: User can tap to inflate/deflate and drag to reposition balloons.
-8.  **Sound Effects**: Integration of `audioplayers` for both spatial sounds (inflation) and ambient sound (wind).
-9.  **Sequential Animations**: The primary balloon pops and triggers a subsequent spawn event.
-10. **Multiple Balloons**: A dynamic scene with multiple varied balloons is created after the first popped event.
-
-The project demonstrates high technical competence in Flutter's animation system and UI design principles.
