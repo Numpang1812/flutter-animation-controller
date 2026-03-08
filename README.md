@@ -15,12 +15,8 @@ The **Balloon Animation** project is an interactive Flutter application designed
 
 ## 2. Screenshots of Outputs
 
-> [!NOTE]
-> Since this is a programmatic report generation, please include your actual app screenshots in this section. Below is a representation of the screen states.
+<img width="1080" height="2400" alt="image" src="https://github.com/user-attachments/assets/79a526fc-3ee3-414c-b3e6-f66a87e374b2" />
 
-| **Main Screen** | **Balloon Floating** | **Multiple Balloons Spawned** |
-| :---: | :---: | :---: |
-| ![Screen 1](file:///d:/AUPP/ICT/Mobile%20App%20Dev/animation_controller/assets/images/background.jpg) <br> *(Placeholder for initial screen)* | *(Balloon swaying with shadow)* | *(Multiple colored balloons)* |
 
 ---
 
